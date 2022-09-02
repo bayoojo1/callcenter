@@ -1,0 +1,347 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+* {
+  box-sizing: border-box;
+}
+
+/* Style for business search overlay starts here */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+/*Ends Here */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navicon {
+  font-size: 20px;
+}
+
+.navbar-left>img {
+  height: 50px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+.bizheading {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.badge {
+  background-color: red;
+}
+
+.social {
+  margin-right: 20px;
+  box-sizing: border-box;
+  color: dimgray;
+}
+
+.fa-phone {
+  transform: scaleX(-1);
+  font-size: 16px;
+}
+
+#fsrlistdiv {
+  text-align: center;
+  margin-top: 15px;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+.modal-header, h4, .close {
+  background-color: #5cb85c;
+  color:white !important;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-footer {
+  background-color: #f9f9f9;
+}
+
+.bizlist {
+  opacity: 0.7;
+  min-height:25px;
+  background-color:forestgreen;
+  color:white;
+  border-radius:5px;
+}
+
+#postbtn1:hover,
+.bizlist:hover {
+  opacity: 1;
+}
+
+#postbtn1 {
+  opacity: 0.7;
+  background-color: forestgreen;
+  color: white;
+  border-radius: 5px;
+}
+
+.bizdetails {
+  display: inline-block;
+  margin-right:8px;
+  margin-bottom: -15px;
+}
+
+.profile {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.profile > li {
+  display: inline-block;
+  float:none;
+}
+
+.glyphicon-ok {
+  color: dodgerblue;
+}
+
+.glyphicon-remove {
+  color: red;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tooltip {
+  font-family: Georgia;
+  font-size: 12px;
+}
+
+.tooltip-inner {
+  background-color: #1E90FF !important;
+  color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #1E90FF;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #1E90FF;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #1E90FF;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #1E90FF;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+#panel {
+  position: relative;
+}
+
+#panel #tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  color: #f1f1f1;
+}
+
+.fa-tags {
+  transform: scaleX(-1);
+}
+
+.price {
+    border: 1px solid #1E90FF;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+.price:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.price-heading {
+  color: #fff !important;
+  background-color: #1E90FF !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.optionals {
+    border: 1px solid #FF4500;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+.optionals:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.opt-heading {
+  color: #fff !important;
+  background-color: #FF4500 !important;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.pbody {
+  height: 140px;
+}
+
+.servicememo {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+}
+
+#userReg {
+  background-color: #C71585;
+  border: none;
+  transition: 0.5s;
+}
+
+#userReg:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .3);
+  font-size: 20px;
+}
+
+.line{
+width: 100%;
+height: 4px;
+border-bottom: 1px solid lightslategrey;
+}
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media screen and (min-width: 240px) {
+.pbody {
+  font-size: 10px;
+  height: 180px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+.pbody {
+  font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+.pbody {
+  font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 411px) {
+.pbody {
+  font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+.pbody {
+  font-size: 16px;
+  height: 140px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.pbody {
+  font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 834px) {
+.pbody {
+  font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+.pbody {
+  font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+.pbody {
+  font-size: 13px;
+  }
+}
